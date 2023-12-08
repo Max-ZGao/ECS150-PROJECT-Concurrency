@@ -147,6 +147,8 @@ void Compression(const char *FileName, int NThreads, int *CurrentCount, int *Cur
 
     free(threads);
     free(args);
+    free(results);
+
 
     // Clean up and unmap the file
     munmap(FileContents, fileSize);
